@@ -17,7 +17,6 @@ const Spinner: React.FC = () => {
           </div>
         </div>
       ) : null}
-      ;
     </>
   );
 };
