@@ -56,13 +56,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
   "lint-staged": {
     "*.ts?(x)": [
       "eslint --cache --fix",
-      "tsc --noEmit"
+      "bash -c tsc --noEmit"
     ],
     "*.{ts,tsx,json}": "prettier --write"
   },
